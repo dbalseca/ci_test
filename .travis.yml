@@ -8,5 +8,9 @@ install:
   - pipenv install
   - pip list
 
+before_script:
+  - export FLASK_APP=main.py
+  - flask run
+
 script:
   - pytest
